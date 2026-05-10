@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // Next.js 14+ 默认支持 app directory，无需配置
 }
 
 module.exports = nextConfig
