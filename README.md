@@ -55,8 +55,27 @@ A forecasting platform similar to Polymarket, built with Next.js, TypeScript, an
 
 ## Deployment
 
-Deploy to Vercel with the following environment variables:
-- `DATABASE_URL`: SQLite database URL
+### Vercel Deployment
+
+1. Connect your GitHub repository to Vercel
+2. Add the following environment variable in Vercel dashboard:
+   - `DATABASE_URL`: PostgreSQL connection string (e.g., `postgresql://username:password@host:port/database`)
+
+3. Vercel will automatically run the build process
+
+### Database Setup
+
+For production, use a PostgreSQL database. You can use:
+- Vercel Postgres (recommended)
+- Supabase
+- Railway
+- PlanetScale
+- Any PostgreSQL provider
+
+Example DATABASE_URL format:
+```
+postgresql://username:password@host:port/database?sslmode=require
+```
 
 ## Testing
 
